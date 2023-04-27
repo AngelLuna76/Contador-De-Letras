@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contador</title>
+	<script>
+		function contarLetras() {
+			var texto = document.getElementById("texto").value;
+			var cantidadLetras = texto.length;
+			document.getElementById("contador").innerHTML = cantidadLetras;
+		}
+	</script>
+</head>
+  <center>
+<body>
+	<h1>Contador de letras</h1>
+	<label for="texto">Ingrese su texto:</label>
+  <br>
+	<textarea id="texto" rows="4" cols="50"></textarea>
+	<br>
+	<button onclick="contarLetras()">Contar letras</button>
+	<div>El texto ingresado tiene <span id="contador">0</span> letras.</div>
+</div>
+    </body>
+    </center>
+</html>
